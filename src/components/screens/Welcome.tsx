@@ -63,7 +63,7 @@ const Welcome = () => {
   const typedElement = useRef<HTMLSpanElement>(null);
   const cursorElement = useRef<HTMLSpanElement>(null);
 
-  const textArray = ["Web", "Mobile", "FinTech", "Developer"];
+  const textArray = ["Creative", "Motivated", "Teamwork", "Problem-solving"];
   const typingDelay = 200;
   const erasingDelay = 100;
   const newTextDelay = 2000;
