@@ -7,8 +7,7 @@ import Skills from "./components/screens/Skills";
 import Welcome from "./components/screens/Welcome";
 
 const Container = styled.div`
-  margin: 0;
-  padding: 0;
+  max-width: 960px;
 `;
 
 function App() {

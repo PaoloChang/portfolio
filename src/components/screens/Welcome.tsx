@@ -2,8 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styled, { keyframes } from "styled-components";
 
 const Container = styled.div`
-  background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, #ffffff 0%, #bdc3c7 20%, #2c3e50 50%);
+  width: 100%;
   color: #eeeeee;
   height: 100vh;
   display: flex;
@@ -55,15 +54,15 @@ const Cursor = styled.span`
   animation-duration: 1s;
   animation-iteration-count: infinite;
 `;
-const CursorTyping = styled.span`
-  animation: none;
-`;
+// const CursorTyping = styled.span`
+//   animation: none;
+// `;
 
 const Welcome = () => {
   const typedElement = useRef<HTMLSpanElement>(null);
   const cursorElement = useRef<HTMLSpanElement>(null);
 
-  const textArray = ["Creative", "Motivated", "Teamwork", "Problem-solving"];
+  const textArray = ["Creative", "Motivated", "Teamwork"];
   const typingDelay = 200;
   const erasingDelay = 100;
   const newTextDelay = 2000;
@@ -72,7 +71,7 @@ const Welcome = () => {
 
   useEffect(() => {
     if (textArray.length) setTimeout(type, newTextDelay + 250);
-  }, []);
+  });
 
   const type = () => {
     if (charIndex < textArray[textArrayIndex].length) {
