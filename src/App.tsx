@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import "./App.css";
-import Profile from "./components/screens/Profile";
-import Projects from "./components/screens/Projects";
-import Skills from "./components/screens/Skills";
-import Welcome from "./components/screens/Welcome";
+import Profile from "./screens/Profile";
+import Projects from "./screens/Projects";
+import Skills from "./screens/Skills";
+import Welcome from "./screens/Welcome";
 
 const Container = styled.div`
   max-width: 960px;
