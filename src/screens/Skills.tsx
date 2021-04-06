@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Terminal from "../components/Terminal";
-import Github from "../../images/github.png";
-import Docker from "../../images/docker.png";
-import Jenkins from "../../images/Jenkins.png";
+import Github from "../images/github.png";
+import Docker from "../images/docker.png";
+import Jenkins from "../images/Jenkins.png";
 
 interface ILine {
   case?: string;

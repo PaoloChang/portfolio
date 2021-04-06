@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { MdEmail } from "react-icons/md";
 import { IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io";
-import profile from "../../images/profile.jpg";
+import profile from "../images/profile.jpg";
 
 const Container = styled.div`
   margin-top: 50px;
@@ -15,22 +15,26 @@ const Container = styled.div`
 const LeftPanel = styled.div`
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 30%;
 `;
 const ProfileImage = styled.img`
+  width: 70%;
   border-radius: 50%;
 `;
 const Nametag = styled.span`
   margin-top: 20px;
+  margin-left: 10px;
   font-size: 1.4rem;
   font-weight: 600;
 `;
 const Position = styled.span`
   margin-top: 5px;
+  margin-left: 10px;
 `;
 const Links = styled.div`
   display: flex;
   flex-direction: row;
+  margin-left: 5px;
 `;
 const Anchor = styled.a`
   color: black;
@@ -60,7 +64,7 @@ const Instagram = styled(IoLogoInstagram)`
 const RightPanel = styled.div`
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 50%;
 `;
 const Biography = styled.div`
   padding-left: 20px;
@@ -75,7 +79,7 @@ const Profile = () => {
     <Container>
       <LeftPanel>
         <ProfileImage src={profile} />
-        <Nametag>Paolo Chanhwan Chang</Nametag>
+        <Nametag>Paolo Chang</Nametag>
         <Position>Web &amp; Mobile Developer</Position>
         <Links>
           <Anchor href="mailto:chanhwan.chang@gmail.com">
